@@ -1,7 +1,7 @@
 /* Box sizing */
 
 * {
-    margin: 0;
+    margin: 0; /* clearing margin and padding from page */
     padding: 0;
     box-sizing: border-box;
 }
@@ -67,17 +67,17 @@ h1 {
 /* main header bar background&text including the logo & nav bar */
 
 header {
-    background-color: #ffffff;
-    margin-bottom: 50px;
-    border-bottom: 2px solid #cccccc;
+    background-color: #ffffff; /* background color of header */ 
+    margin-bottom: 50px; /* adding space from header to main wrapper */
+    border-bottom: 2px solid #cccccc; /* border only on bottom */
 }
 
 /* CONTACT boxes */
 
 input[type=text], /* adjusting box sizes of first last message */
 textarea {
-    width:100%;
-    line-height: 2;
+    width:100%; /* extending text box width of content box */
+    line-height: 2; /* text box sizing */
 }
 
 /* nav bar */
@@ -89,7 +89,6 @@ li, a {
     font-size: 16px; /* nav link text size */
     text-decoration: none; /* removing link underline */
     display: inline-block; /* layout for links horizontal */
-
     padding: 0px 10px; /* space between each link */
 
 }
@@ -129,18 +128,18 @@ li:nth-child(1), li:nth-child(2) { /* selecting only about and portfolio nav lin
 /* spacing for nav bar */
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    width: 960px;    
-    margin: auto;
+    display: flex; /* flex box for nav bar */
+    justify-content: space-between; /* space between logo and nav links */
+    width: 960px;    /* setting width to align items with main content width */
+    margin: auto; /* centering the nav bar so that equal margins around width */
 }
 
 /* list style not really sure why this is here, was from tutorial and in the inspect doesnt change when removed 
     ??? maybe remove??*/
 
 .navLinks {
-    list-style: none;
-    padding-top: 15px;
+    list-style: none; 
+    padding-top: 15px; /* drops the links down from living at top of nav bar */
 }
 
 /* profile picture */
@@ -149,7 +148,7 @@ li:nth-child(1), li:nth-child(2) { /* selecting only about and portfolio nav lin
     height: 200px; /* main profile image */
     width: 180px;
     float: left; /* floating left of text in main bio section */
-    margin: 0 10px 10px;
+    margin: 0 10px 10px; /* adding space between image and text */
 }
 
 /* RPG Game Image portfolio gallery */
